@@ -1,0 +1,62 @@
+<!--
+Client-Side Server JavaScript
+Assignment 3
+Student: Carlos Emanuel Aragundi Rivas
+ID: 200559970
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>New Smoothies Available!</h1>
+    <figure>
+        <img id="featured" src="images/banana.jpg" alt="Featured Image">
+        <figcaption id="caption">Banana</figcaption>
+    </figure>
+    <ul id="thumbnails"></ul>
+    
+    <h1>Order Your Smoothie</h1>
+    <form id="smoothieForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+            <option value="Small">Small ($5)</option>
+            <option value="Medium">Medium ($7)</option>
+            <option value="Large">Large ($9)</option>
+        </select><br><br>
+
+        <label for="ingredients">Ingredients:</label><br>
+        <input type="checkbox" id="Banana" name="ingredients" value="Banana"> Banana<br>
+        <input type="checkbox" id="Strawberry" name="ingredients" value="Strawberry"> Strawberry<br>
+        <input type="checkbox" id="Blueberry" name="ingredients" value="Blueberry"> Blueberry<br>
+        <input type="checkbox" id="Mango" name="ingredients" value="Mango"> Mango<br><br>
+
+        <label for="extras">Extras:</label><br>
+        <input type="checkbox" id="Protein" name="extras" value="Protein"> Protein Powder ($1.50)<br>
+        <input type="checkbox" id="Chia" name="extras" value="Chia"> Chia Seeds ($1.50)<br><br>
+
+        <button type="button" onclick="orderSmoothie()">Order</button>
+    </form>
+
+    <div id="orderSummary"></div>
+
+    <footer>
+        <p>Client-Side Server JavaScript</p>
+        <p>Assignment 3</p>
+        <p>Student: Carlos Emanuel Aragundi Rivas</p>
+        <p>ID: 200559970</p>
+        <p>Professor: Goutham Aduri</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
